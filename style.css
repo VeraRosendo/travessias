@@ -414,6 +414,12 @@ section {
   flex-wrap: wrap;
   margin-top: 30px;
 }
+.contact-fallback {
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.contact-fallback strong { color: var(--maroon); }
 
 /* ---------- Footer ---------- */
 footer.site {
