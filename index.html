@@ -13,7 +13,7 @@
   <div class="site-head-row">
     <a class="brand" href="#topo">Travessias</a>
     <nav class="site-nav">
-      <a href="#servicos">Serviços</a>
+      <a href="#caminhos">Caminhos</a>
       <a href="biotravessias.html">BioTravessias</a>
       <a class="nav-cta" href="#contato">Falar comigo</a>
     </nav>
@@ -26,7 +26,7 @@
     <h1 class="serif">Toda vida é feita de travessias.</h1>
     <p class="lead">Travessias reúne projetos para contar, escutar e registrar histórias, sejam elas de uma vida inteira, de um trabalho, de uma família ou de uma ideia que ainda está nascendo. Cada projeto tem seu próprio espaço, com o cuidado que a história pedir.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="#servicos">Ver os projetos</a>
+      <a class="btn-primary" href="#caminhos">Ver os projetos</a>
       <a class="btn-secondary" href="#contato">Falar comigo</a>
     </div>
   </div>
@@ -46,7 +46,7 @@
   </div>
 </section>
 
-<section class="section-alt" id="servicos">
+<section class="section-alt" id="caminhos">
   <div class="section-inner">
     <p class="section-kicker">Os projetos</p>
     <h2 class="serif section-title">Cada história, um espaço próprio</h2>
@@ -76,6 +76,7 @@
     <p class="section-text">Escreva e me conte o que você tem em mente.</p>
     <div class="contact-row">
       <a class="btn-primary" href="mailto:sawubona.br@gmail.com">Escrever um e-mail</a>
+      <button type="button" class="btn-secondary" id="copy-email">Copiar e-mail</button>
     </div>
     <p class="contact-fallback">ou escreva diretamente para <strong>sawubona.br@gmail.com</strong></p>
   </div>
@@ -91,6 +92,20 @@
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 8);
   }, { passive: true });
+
+  const copyBtn = document.getElementById('copy-email');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('sawubona.br@gmail.com');
+        copyBtn.textContent = 'E-mail copiado!';
+        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
+      } catch (err) {
+        copyBtn.textContent = 'Veja o e-mail abaixo';
+        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
+      }
+    });
+  }
 </script>
 
 </body>
