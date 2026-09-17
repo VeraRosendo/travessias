@@ -19,6 +19,7 @@
       <a href="#como-funciona">Como funciona</a>
       <a href="#para-quem">Para quem é</a>
       <a href="#formatos">Formatos</a>
+      <a href="fundamentos.html">Fundamentos</a>
       <a class="nav-cta" href="#contato">Contar minha história</a>
     </nav>
   </div>
@@ -130,6 +131,7 @@
     <p class="section-text">Você conta, eu escuto. Da nossa escuta nasce a narrativa, e da narrativa, o site ou o livro da sua vida.</p>
     <div class="contact-row">
       <a class="btn-primary" href="mailto:sawubona.br@gmail.com">Escrever um e-mail</a>
+      <button type="button" class="btn-secondary" id="copy-email">Copiar e-mail</button>
     </div>
     <p class="contact-fallback">ou escreva diretamente para <strong>sawubona.br@gmail.com</strong></p>
   </div>
@@ -140,7 +142,10 @@
     <span class="brand serif">Travessias</span>
     <span class="product-tag serif">BioTravessias</span>
   </a>
-  <p>© 2026 BioTravessias, um site do Travessias. Histórias de vida, registradas como legado.</p>
+  <div>
+    <p>© 2026 BioTravessias, um site do Travessias. Histórias de vida, registradas como legado.</p>
+    <p class="footer-credit">Produção e Design: Vera Rosendo · Desenvolvimento técnico: Claude (AI)</p>
+  </div>
 </footer>
 
 <script>
@@ -148,6 +153,20 @@
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 8);
   }, { passive: true });
+
+  const copyBtn = document.getElementById('copy-email');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('sawubona.br@gmail.com');
+        copyBtn.textContent = 'E-mail copiado!';
+        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
+      } catch (err) {
+        copyBtn.textContent = 'Veja o e-mail abaixo';
+        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
+      }
+    });
+  }
 </script>
 
 </body>
