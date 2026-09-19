@@ -1,115 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travessias — Da lembrança à palavra</title>
-<meta name="description" content="Travessias reúne projetos para contar, escutar e registrar histórias. O primeiro deles é o BioTravessias, dedicado a histórias de vida.">
+<title>Travessias de Vera · BioTravessias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site" id="topo">
-  <div class="site-head-row">
-    <a class="brand" href="#topo">Travessias</a>
-    <nav class="site-nav">
-      <a href="#caminhos">Caminhos</a>
-      <a href="biotravessias.html">BioTravessias</a>
-      <a class="nav-cta" href="#contato">Falar comigo</a>
-    </nav>
-  </div>
+<header class="hero">
+  <p class="hero__eyebrow">BioTravessias</p>
+  <h1>Travessias de Vera</h1>
+  <p class="tagline">Da lembrança à palavra: o livro da sua vida</p>
+  <blockquote class="hero__quote">
+    Eu não tive o apoio que gostaria de ter tido, mas construí a minha vida com meus recursos.
+  </blockquote>
 </header>
 
-<section class="hero">
-  <div class="hero-copy">
-    <p class="hero-eyebrow">Da lembrança à palavra</p>
-    <h1 class="serif">Toda vida é feita de travessias.</h1>
-    <p class="lead">Travessias reúne projetos para contar, escutar e registrar histórias, sejam elas de uma vida inteira, de um trabalho, de uma família ou de uma ideia que ainda está nascendo. Cada projeto tem seu próprio espaço, com o cuidado que a história pedir.</p>
-    <div class="hero-actions">
-      <a class="btn-primary" href="#caminhos">Ver os projetos</a>
-      <a class="btn-secondary" href="#contato">Falar comigo</a>
-    </div>
-  </div>
+<div class="timeline-mobile" id="timelineMobile"></div>
 
-  <div class="hero-art" aria-hidden="true">
-    <svg viewBox="0 0 360 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;max-width:340px">
-      <path d="M60 60 L180 340" stroke="#4a1626" stroke-width="5" stroke-linecap="round" fill="none"/>
-      <path d="M300 60 L180 340" stroke="#a67c2e" stroke-width="5" stroke-linecap="round" fill="none"/>
-      <path d="M40 220 C 110 180, 150 260, 220 210 S 320 150, 330 190" stroke="#7a3247" stroke-width="2" fill="none" opacity="0.55"/>
-      <circle cx="60" cy="60" r="6" fill="#4a1626"/>
-      <circle cx="300" cy="60" r="6" fill="#a67c2e"/>
-      <circle cx="180" cy="340" r="7" fill="#2a1e1a"/>
-      <circle cx="110" cy="197" r="4" fill="#7a3247" opacity="0.7"/>
-      <circle cx="220" cy="210" r="4" fill="#7a3247" opacity="0.7"/>
-      <circle cx="290" cy="176" r="4" fill="#7a3247" opacity="0.7"/>
-    </svg>
+<div class="layout">
+  <nav class="timeline" id="timelineDesktop" aria-label="Linha do tempo">
+    <ol></ol>
+  </nav>
+
+  <main>
+
+    <section class="chapter" id="ch-1" data-year="1962" data-place="Porto Mutinho, MS">
+      <p class="meta">1962</p>
+      <h2>Porto Mutinho, Mato Grosso do Sul</h2>
+      <p>Nasci em Porto Mutinho, no Mato Grosso do Sul, em 11 de agosto de 1962.</p>
+      <div class="note">nome completo ao nascer, e como era a vida da família nessa cidade antes da mudança</div>
+    </section>
+
+    <section class="chapter" id="ch-2" data-year="c. 1965" data-place="Partida para o RS">
+      <p class="meta">por volta de 1965</p>
+      <h2>A perda e a partida</h2>
+      <p>Minha mãe, Darcy Alvarenga Rosendo, morreu quando eu tinha três anos. Quase não guardo lembranças dela, só a ausência que ficou. Foi meu pai, Antônio Carlos Rosendo, militar do exército, quem nos levou dali, para o Rio Grande do Sul. Um ano depois, ele se casou de novo.</p>
+    </section>
+
+    <section class="chapter" id="ch-3" data-year="infância" data-place="Cruz Alta · Jaguarão · Santo Ângelo">
+      <p class="meta">infância no Rio Grande do Sul</p>
+      <h2>Uma infância entre duas relações</h2>
+      <p>Cresci entre duas relações muito diferentes. Com minha madrasta, uma convivência mais complexa, que aprendi cedo a não expor. Com meu pai, algo que hoje chamaria de excelente: pequenas rotinas que hoje entendo como felicidade.</p>
+      <p>O café da manhã na cama, antes de ele sair para o quartel, todas as manhãs. As visitas às tias e a macela colhida em dia de santo, em Cruz Alta. A pesca em Jaguarão. As laranjas e melancias ao sol nos domingos sentados na frente de casa vendo torcedores chegarem ao Ginásio Tamoio, em Santo Ângelo. Era uma infância independente, segura, com poucos limites, e feliz em todos os dias em que ele estava por perto.</p>
+      <div class="note">como a família reagia às pequenas conquistas, e outros momentos marcantes vividos juntos que ainda não foram registrados</div>
+    </section>
+
+    <section class="chapter" id="ch-4" data-year="aos 17" data-place="Primeiro Filho">
+      <p class="meta">aos 17 anos</p>
+      <h2>Primeiro Filho</h2>
+      <p>Casei aos 17 anos. Foi desse casamento que nasceu meu primeiro filho, Rogério Eduardo. Batizado com o apelido de Tuca, era uma criança muito inteligente, alegre, risonha e determinada. Caminhou aos 8 meses e meio e desde sempre foi o terror da casa, com uma energia imensa, levando luz e carisma por onde passou. Aos 19 anos, me divorciei.</p>
+    </section>
+
+    <section class="chapter" id="ch-5" data-year="até 1994" data-place="Ijuí, RS">
+      <p class="meta">até 1994</p>
+      <h2>Ijuí, Rio Grande do Sul</h2>
+      <p>Trabalhei como auxiliar de enfermagem no Hospital de Clínicas de Ijuí, sob a supervisão da enfermeira Rosane Zawatski, em Ijuí, no Rio Grande do Sul. Lá morei até 1994.</p>
+      <div class="note">em que ano começou o trabalho na enfermagem, e o que levou a essa escolha</div>
+    </section>
+
+    <section class="chapter" id="ch-6" data-year="1994" data-place="Boa Vista, RR">
+      <p class="meta">a partir de 1994</p>
+      <h2>Boa Vista, Roraima</h2>
+      <p>Em 1994 fui para Boa Vista, em Roraima. Trabalhei no Hospital de Base e na Funasa, onde atuei nas áreas Yanomami de Surucucus e Xitei. Foi um tempo de muitas aventuras, de andar de bimotor, helicóptero, voadeiras, morar no meio do mato e conviver com os índios.</p>
+    </section>
+
+    <section class="chapter" id="ch-7" data-year="1997" data-place="Concurso Embrapa">
+      <p class="meta">1997</p>
+      <h2>O concurso da Embrapa</h2>
+      <p>Em 1997 passei no concurso para a Embrapa, na cidade de Boa Vista, onde fiquei lotada até 2010. Foi o início de uma carreira que seguiria por 26 anos, na área de comunicação, com trabalho em diagramação e produção de informativos.</p>
+    </section>
+
+    <section class="chapter" id="ch-8" data-year="aos 36" data-place="Manuela Havena">
+      <p class="meta">aos 36 anos</p>
+      <h2>Manuela Havena</h2>
+      <p>Aos 36 anos, vivi um relacionamento do qual nasceu minha segunda filha, Manuela Havena. Foi desde sempre a doçura personificada: solícita, alegre, inteligente. Minha companheira, a quem sempre disse que ela foi meu bônus por bom comportamento.</p>
+    </section>
+
+    <section class="chapter" id="ch-9" data-year="2010–2016" data-place="Passo Fundo, RS">
+      <p class="meta">2010 a 2016</p>
+      <h2>De volta ao Rio Grande do Sul</h2>
+      <p>Em 2010 fui transferida pela Embrapa e voltei a morar no Rio Grande do Sul, na cidade de Passo Fundo, onde fiquei até 2016.</p>
+    </section>
+
+    <section class="chapter" id="ch-10" data-year="2016–2022" data-place="Porto Velho, RO">
+      <p class="meta">2016 a 2022</p>
+      <h2>Porto Velho, Rondônia</h2>
+      <p>Em 2016 fui transferida para Porto Velho, em Rondônia, onde morei até 2022.</p>
+    </section>
+
+    <section class="chapter" id="ch-11" data-year="2022" data-place="Manaus, AM">
+      <p class="meta">a partir de 2022</p>
+      <h2>Manaus e a aposentadoria</h2>
+      <p>Em 2022 fui transferida para Manaus, no Amazonas, cidade onde me aposentei, encerrando 26 anos de Embrapa.</p>
+    </section>
+
+    <section class="chapter" id="ch-12" data-year="hoje" data-place="Espírito Santo">
+      <p class="meta">chegada ao Espírito Santo</p>
+      <h2>A travessia até aqui</h2>
+      <p>Vim para o Espírito Santo em busca da qualidade de vida que o estado oferece. Cheguei com a família, um carro e um cachorro, sem nada além disso para construir, e sem nunca sentir necessidade de erguer algo material. Meu foco sempre foi o conhecimento: sou formada em Administração, fiz especialização em Psicologia, e hoje curso a pós-graduação em Cidades Inteligentes.</p>
+      <div class="note">mês e ano exatos da chegada ao Espírito Santo e a Vila Velha</div>
+    </section>
+
+    <section class="chapter" id="ch-13" data-year="hoje" data-place="Quem sou hoje">
+      <p class="meta">quem sou hoje</p>
+      <h2>Família, autoconhecimento, ser feliz</h2>
+      <p>Hoje, o que me importa é a família, o autoconhecimento e ser feliz. Sou mãe orgulhosa de Rogério Eduardo e de Manuela Havena, e avó orgulhosa de Anne Luise, filha de Rogério.</p>
+      <p>Construí uma história sólida. Sobrevivi onde não pensei que seria possível. Criei filhos que hoje seguem, cada um, sua própria direção. Gostaria que soubessem que vivi grande parte da vida sem me conhecer, e que entendi por que a velhice traz sabedoria: porque nos dá a chance de parar, respirar e escolher.</p>
+      <blockquote class="closing">
+        Eu não tive o apoio que gostaria de ter tido, mas construí a minha vida com meus recursos.
+      </blockquote>
+      <div class="note">alguma história, pessoa, lugar ou detalhe que ainda não foi registrado e que você considera essencial</div>
+    </section>
+
+  </main>
+</div>
+
+<section class="checklist">
+  <div class="checklist__inner">
+    <h3>Pontas soltas para completar</h3>
+    <p class="lead">Tudo isso já está marcado direto nos capítulos acima. Reunido aqui só para facilitar a próxima rodada de áudios.</p>
+    <ul>
+      <li>Nome completo ao nascer</li>
+      <li>Ano de início do trabalho na enfermagem em Ijuí e o que motivou essa escolha</li>
+      <li>Mês e ano da chegada ao Espírito Santo e a Vila Velha</li>
+      <li>Reações da família a pequenas conquistas e outros momentos marcantes vividos juntos</li>
+      <li>Qualquer história, pessoa ou lugar não perguntado que você considere essencial</li>
+    </ul>
   </div>
 </section>
 
-<section class="section-alt" id="caminhos">
-  <div class="section-inner">
-    <p class="section-kicker">Os projetos</p>
-    <h2 class="serif section-title">Cada história, um espaço próprio</h2>
-    <p class="section-text">O Travessias vai crescendo aos poucos, um projeto de cada vez. Este é o primeiro.</p>
+<footer class="credit">Travessias · BioTravessias</footer>
 
-    <div class="services">
-      <a class="service-card" href="biotravessias.html">
-        <p class="service-tag serif">BioTravessias</p>
-        <h3 class="serif">O livro da sua vida</h3>
-        <p>Um espaço para contar, escutar e registrar histórias de vida. Você grava, eu escuto e transformo em texto, reunido em um site só seu.</p>
-        <span class="service-link">Conhecer o BioTravessias</span>
-      </a>
-
-      <div class="service-card service-card-soon">
-        <p class="service-tag serif">Em breve</p>
-        <h3 class="serif">Novas travessias</h3>
-        <p>Outras ideias de registro e memória estão a caminho, cada uma com seu próprio espaço dentro do Travessias.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-final" id="contato">
-  <div class="section-inner">
-    <p class="section-kicker">Vamos conversar</p>
-    <h2 class="serif section-title">Tem uma história ou uma ideia para contar</h2>
-    <p class="section-text">Escreva e me conte o que você tem em mente.</p>
-    <div class="contact-row">
-      <a class="btn-primary" href="mailto:sawubona.br@gmail.com">Escrever um e-mail</a>
-      <button type="button" class="btn-secondary" id="copy-email">Copiar e-mail</button>
-    </div>
-    <p class="contact-fallback">ou escreva diretamente para <strong>sawubona.br@gmail.com</strong></p>
-  </div>
-</section>
-
-<footer class="site">
-  <a class="brand serif" href="#topo">Travessias</a>
-  <div>
-    <p>© 2026 Travessias. Histórias, registradas como legado.</p>
-    <p class="footer-credit">Produção e Design: Vera Rosendo · Desenvolvimento técnico: Claude (AI)</p>
-  </div>
-</footer>
-
-<script>
-  const header = document.querySelector('header.site');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 8);
-  }, { passive: true });
-
-  const copyBtn = document.getElementById('copy-email');
-  if (copyBtn) {
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText('sawubona.br@gmail.com');
-        copyBtn.textContent = 'E-mail copiado!';
-        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
-      } catch (err) {
-        copyBtn.textContent = 'Veja o e-mail abaixo';
-        setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2500);
-      }
-    });
-  }
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
